@@ -8,3 +8,6 @@
   width: 90px;
 }
 
+.signInButton {
+  grid-column: 8/9;
+}
