@@ -1,18 +1,7 @@
-.profileimg {
-  width: 50px;
-  border-radius: 50%;
-  border: 5px solid #fff;
-}
-
-
 .profileDropDown {
   display: none;
   position: absolute;
   background-color: orange;
-}
-
-.profileWrapper:hover .profileDropDown{
-  display: block;
 }
 
 .profileDropDown span {

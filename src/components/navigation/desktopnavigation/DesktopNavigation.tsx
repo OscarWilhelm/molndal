@@ -13,7 +13,7 @@ export const DesktopNavigation = () => {
 
   const showUserOrSignInButton = () => {
     return authUser
-      ? <div className='signInButton'><Profile /></div>
+      ? <div className='profile'><Profile /></div>
       : <span className='signInButton' onClick={() => history.push(RoutingPath.signInView)}>Sign In</span>
   }
 
@@ -22,9 +22,11 @@ export const DesktopNavigation = () => {
       <img className='navigationLogotype'
         src={logotype}
         alt={''} />
-      <span onClick={() => history.push(RoutingPath.homeView)}>Home</span>
-      <span onClick={() => history.push(RoutingPath.planningView)}>Plan</span>
-      <span onClick={() => history.push(RoutingPath.itemsView)}>Items</span>
+      <ul className='ulTabsWrapper'>
+        <li className='liTabs' onClick={() => history.push(RoutingPath.homeView)}>Home</li>
+        <li className='liTabs' onClick={() => history.push(RoutingPath.planningView)}>Plan</li>
+        <li className='liTabs' onClick={() => history.push(RoutingPath.itemsView)}>Items</li>
+      </ul>
       {showUserOrSignInButton()}
     </div>
   )

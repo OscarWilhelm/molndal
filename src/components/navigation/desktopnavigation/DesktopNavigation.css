@@ -1,13 +1,45 @@
 .desktopNavigationWrapper {
   display: grid;
-  grid-template-columns: repeat(10, 1fr);
-  background-color: #b5d5d1;  
+  grid-template-columns: repeat(20, 1fr);
+  background-color: #34a8f5;  
+  padding: 5px;
 }
 
 .navigationLogotype {
-  width: 90px;
+  grid-column: 3/4;
+  width: 50px;
 }
 
-.signInButton {
-  grid-column: 8/9;
+.signInButton,
+.profile {
+  grid-column: 14/16;
+  color: #fff;
+  font-weight: 600;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.desktopNavigationTabs {
+  grid-column: 7/9;
+  align-items: center;
+  justify-self: center;
+}
+
+.ulTabsWrapper {
+  list-style-type: none;
+}
+
+.liTabs {
+  display: inline;
+  cursor: pointer;
+  padding: 10px;
+  font-weight: 600;
+  transition: 0.2s;
+  opacity: 0.8;
+  color: #fff;
+}
+
+.liTabs:hover {
+  opacity: 1.0;
+  transition: 0.3s;
 }
