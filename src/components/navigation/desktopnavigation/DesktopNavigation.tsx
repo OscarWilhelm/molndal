@@ -19,15 +19,15 @@ export const DesktopNavigation = () => {
 
   return (
     <div className='desktopNavigationWrapper'>
-      <img className='navigationLogotype'
-        src={logotype}
-        alt={''} />
-      <ul className='ulTabsWrapper'>
+      <img className='navigationLogotype' src={logotype} alt={''} />
+      <div className='desktopNavigationTabs'>
+        <ul className='ulTabsWrapper'>
         <li className='liTabs' onClick={() => history.push(RoutingPath.homeView)}>Home</li>
         <li className='liTabs' onClick={() => history.push(RoutingPath.planningView)}>Plan</li>
         <li className='liTabs' onClick={() => history.push(RoutingPath.itemsView)}>Items</li>
-      </ul>
-      {showUserOrSignInButton()}
+        </ul>
     </div>
+      { showUserOrSignInButton() }
+    </div >
   )
 }

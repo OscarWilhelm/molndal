@@ -7,11 +7,20 @@ import { SignInView } from '../view/SignInView'
 import RoutingPath from './RoutingPath'
 import { UserContext } from '../shared/provider/UserProvider'
 import { useEffect, useContext } from 'react'
+import { SettingsView } from '../view/authenticatedViews/SettingsView'
 
 export const Routes = (props: { children: React.ReactChild }) => {
 
   const [authUser, setAuthUser] = useContext(UserContext)
   const { children } = props
+
+  const blockRouteIfAuthenticated = (authView: React.FC, nonAuthView: React.FC) => {
+    return !authUser ? authView : nonAuthView
+  }
+
+  const blockRouteIfNotAuthenticated = (authView: React.FC, nonAuthView: React.FC) => {
+    return authUser ? authView : nonAuthView
+  }
 
   useEffect(() => {
     if (localStorage.getItem('user')) {
@@ -26,7 +35,8 @@ export const Routes = (props: { children: React.ReactChild }) => {
         <Route exact path={RoutingPath.homeView} component={HomeView} />
         <Route exact path={RoutingPath.planningView} component={PlanningView} />
         <Route exact path={RoutingPath.itemsView} component={ItemsView} />
-        <Route exact path={RoutingPath.signInView} component={SignInView} />
+        <Route exact path={RoutingPath.signInView} component={blockRouteIfAuthenticated(SignInView, HomeView)} />
+        <Route exact path={RoutingPath.settingsView} component={blockRouteIfNotAuthenticated(SettingsView, HomeView)} />
         <Route component={HomeView} />
       </Switch>
     </BrowserRouter>
