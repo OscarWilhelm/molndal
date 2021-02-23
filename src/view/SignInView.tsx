@@ -5,6 +5,8 @@ import { useHistory } from 'react-router-dom'
 import RoutingPath from '../routes/RoutingPath'
 import { UserContext } from '../shared/provider/UserProvider'
 
+//Lägg till en authenticatedUser variabel. 
+
 export const SignInView = () => {
   const history = useHistory()
   const [loginCredentials, setLoginCredentials] = useState<loginCredentials>({ username: '', password: '' });

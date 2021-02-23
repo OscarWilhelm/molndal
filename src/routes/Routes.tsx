@@ -36,7 +36,7 @@ export const Routes = (props: { children: React.ReactChild }) => {
         <Route exact path={RoutingPath.planningView} component={PlanningView} />
         <Route exact path={RoutingPath.itemsView} component={ItemsView} />
         <Route exact path={RoutingPath.signInView} component={blockRouteIfAuthenticated(SignInView, HomeView)} />
-        <Route exact path={RoutingPath.settingsView} component={blockRouteIfNotAuthenticated(SettingsView, HomeView)} />
+        <Route exact path={RoutingPath.settingsView} component={blockRouteIfNotAuthenticated(SettingsView, SignInView)} />
         <Route component={HomeView} />
       </Switch>
     </BrowserRouter>

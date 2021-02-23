@@ -5,18 +5,8 @@
 }
 
 
-.profileDropDown {
-  display: none;
-  position: absolute;
-  background-color: orange;
-}
 
 .profileWrapper:hover .profileDropDown{
   display: block;
 }
 
-.profileDropDown span {
-  display: block;
-  cursor: pointer;
-  padding: 10px;
-}
