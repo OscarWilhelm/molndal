@@ -9,14 +9,12 @@ const server = express()
 server.use(helmet())
 server.use(morgan('common'))
 
-server.get('/recipe',(request, response) => {
+server.get('/items',(request, response) => {
 	response.send('Ditt API-anrop gick igenom')
  })
 
-
 server.use(Middlewares.notFound)
 server.use(Middlewares.errorHandler)
-
 
 Configurations.connectToDatabase()
 Configurations.connectToPort(server)
