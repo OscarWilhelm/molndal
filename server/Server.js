@@ -23,3 +23,5 @@ server.use(Middlewares.errorHandler)
 
 Configurations.connectToDatabase()
 Configurations.connectToPort(server)
+
+export default server
