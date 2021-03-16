@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/molndal/static/css/main.60842e00.chunk.css",
+    "main.js": "/molndal/static/js/main.fe29616e.chunk.js",
+    "main.js.map": "/molndal/static/js/main.fe29616e.chunk.js.map",
+    "runtime-main.js": "/molndal/static/js/runtime-main.b4018c37.js",
+    "runtime-main.js.map": "/molndal/static/js/runtime-main.b4018c37.js.map",
+    "static/js/2.3dcbfe50.chunk.js": "/molndal/static/js/2.3dcbfe50.chunk.js",
+    "static/js/2.3dcbfe50.chunk.js.map": "/molndal/static/js/2.3dcbfe50.chunk.js.map",
+    "static/js/3.07130c32.chunk.js": "/molndal/static/js/3.07130c32.chunk.js",
+    "static/js/3.07130c32.chunk.js.map": "/molndal/static/js/3.07130c32.chunk.js.map",
+    "index.html": "/molndal/index.html",
+    "static/css/main.60842e00.chunk.css.map": "/molndal/static/css/main.60842e00.chunk.css.map",
+    "static/js/2.3dcbfe50.chunk.js.LICENSE.txt": "/molndal/static/js/2.3dcbfe50.chunk.js.LICENSE.txt",
+    "static/media/logotype.5548a794.svg": "/molndal/static/media/logotype.5548a794.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.b4018c37.js",
+    "static/js/2.3dcbfe50.chunk.js",
+    "static/css/main.60842e00.chunk.css",
+    "static/js/main.fe29616e.chunk.js"
+  ]
+}
